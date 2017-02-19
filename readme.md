@@ -1,6 +1,6 @@
-# Pre-work - TodoMiniApp
+# Assignment1 - Flicks
 
-TodoMiniApp is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
+Flicks is an android app that allows user find information about movie.
 
 Submitted by: Huynh Minh Anh Tuan
 
