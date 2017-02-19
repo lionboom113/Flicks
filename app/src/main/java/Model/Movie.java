@@ -4,6 +4,7 @@ package Model;
  * Created by Tuan on 2017/02/19.
  */
 public class Movie {
+    private int id;
     private String title;
     private String backdrop_path;
     private String overview;
@@ -48,5 +49,13 @@ public class Movie {
 
     public void setVote_average(double vote_average) {
         this.vote_average = vote_average;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

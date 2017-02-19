@@ -28,6 +28,7 @@ import Adapter.MovieItemAdapterHorizontal;
 import Model.Genre;
 import Model.GenreWrapper;
 import Model.Movie;
+import Model.MyApiEndpointInterface;
 import Model.ResultWrapper;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -88,7 +89,7 @@ public class MainActivity extends Activity {
             public void onResponse(Call<ResultWrapper> call, Response<ResultWrapper> response) {
                 int statusCode = response.code();
                 findViewById(R.id.loadingPanel).setVisibility(View.GONE);
-                ResultWrapper resultWrapper = response.body();
+                final ResultWrapper resultWrapper = response.body();
                 movieListView = (ListView) findViewById(R.id.lvItems);
                 ArrayAdapter<Movie> adapter;
                 if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
@@ -101,6 +102,7 @@ public class MainActivity extends Activity {
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                         Intent intent = new Intent(MainActivity.this, MovieDetailActivity.class);
+                        intent.putExtra("movieId",resultWrapper.getResults().get(i).getId());
                         startActivity(intent);
                     }
                 });
@@ -159,9 +161,4 @@ public class MainActivity extends Activity {
 
     }
 }
-interface MyApiEndpointInterface {
-    @GET("movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")
-    Call<ResultWrapper> getAllMovie();
-    @GET("genre/movie/list?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")
-    Call<GenreWrapper> getGenreInfo();
-}
+

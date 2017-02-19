@@ -8,20 +8,26 @@ Time spent: 7 hours (approx) spent in total
 
 ## User Stories
 
-The following **required** functionality is completed
+**required** functionality is completed
 
+The following **optional** functionality is completed
 
-The following **optional** features are implemented:
+Add pull-to-refresh for popular stream with SwipeRefreshLayout (1 point)
 
+Display a nice default placeholder graphic for each image during loading (read more about Picasso or Glide) (1 point)
 
-The following **additional** features are implemented:
+Improve the user interface through styling and coloring (1 to 5 points depending on the difficulty of UI improvements)
 
+Stretch: Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity. (3 points)
 
+Stretch: Apply the popular ButterKnife annotation library to reduce view boilerplate. (1 point)
+
+Stretch: Add a rounded corners for the images using the Picasso transformations or Glide transformations. (1 point)
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-
+<img src='http://i.imgur.com/zlZU7Vy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
