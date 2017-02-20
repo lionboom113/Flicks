@@ -16,12 +16,16 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#E9C46A"
             android:text="This is title"
             android:id="@+id/txtTitle"
             android:textSize="20sp"/>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#8037474F"
+            android:padding="3dp"
+            android:layout_marginBottom="10dp"
             android:orientation="horizontal">
             <ImageView
                 android:layout_width="20dp"
@@ -51,7 +55,8 @@
             android:text="This is description"
             android:id="@+id/txtDescription"
             android:ellipsize="end"
-            android:maxLines="3"
+            android:maxLines="4"
+            android:paddingRight="5dp"
             android:textSize="12sp"/>
     </LinearLayout>
 </LinearLayout>

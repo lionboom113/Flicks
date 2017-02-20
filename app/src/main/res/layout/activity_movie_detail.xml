@@ -9,18 +9,35 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context="com.d2q.demo.assignment1.MovieDetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Categories "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtGenre"
+            android:textSize="15dp"
+            android:textColor="#E9C46A"
+            android:layout_marginBottom="20dp"
+            android:text="Horror | Thriller" />
+    </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtGenre"
-        android:textSize="15dp"
         android:textColor="#fff"
-        android:layout_marginBottom="20dp"
-        android:text="Horror | Thriller" />
+        android:layout_height="wrap_content"
+        android:text="Overview"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="12dp"
+        android:padding="10dp"
+        android:background="#33757575"
         android:id="@+id/txtDescriptionDetail"
         android:text="This is description"/>
     <LinearLayout

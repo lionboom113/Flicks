@@ -4,8 +4,6 @@ Flicks is an android app that allows user find information about movie.
 
 Submitted by: Huynh Minh Anh Tuan
 
-Time spent: 7 hours (approx) spent in total
-
 ## User Stories
 
 **required** functionality is completed
@@ -23,11 +21,21 @@ Stretch: Expose details of movie (ratings using RatingBar, popularity, and synop
 Stretch: Apply the popular ButterKnife annotation library to reduce view boilerplate. (1 point)
 
 Stretch: Add a rounded corners for the images using the Picasso transformations or Glide transformations. (1 point)
+
+-----------
+Added:
+- Add slide animation
+-----------
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
 <img src='http://i.imgur.com/zlZU7Vy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+
+Update style and add slide animation
+<img src='http://i.imgur.com/6jYegm0.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes

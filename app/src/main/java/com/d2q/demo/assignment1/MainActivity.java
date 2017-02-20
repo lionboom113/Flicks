@@ -1,9 +1,11 @@
 package com.d2q.demo.assignment1;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -55,6 +57,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         genreMap = new HashMap<Integer, String>();
         setTitle("Now playing");
+        ActionBar bar = getActionBar();
         Gson gson = new GsonBuilder()
                 .setDateFormat("yyyy-MM-dd'T'HH:mm:ssZ")
                 .create();

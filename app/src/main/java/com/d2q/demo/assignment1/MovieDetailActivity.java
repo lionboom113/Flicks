@@ -55,6 +55,7 @@ public class MovieDetailActivity extends Activity {
     ImageView ivPoster;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_detail);
         ButterKnife.bind(this);
@@ -78,7 +79,7 @@ public class MovieDetailActivity extends Activity {
                 tvBudget.setText(NumberFormat.getNumberInstance(Locale.US).format(mvDetail.getBudget()));
                 tvDescription.setText(mvDetail.getOverview());
                 tvFilmRating.setText(""+mvDetail.getVote_average());
-                tvTotalVote.setText(""+mvDetail.getVote_count());
+                tvTotalVote.setText(""+mvDetail.getVote_count() + " vote(s)");
                 StringBuilder sb = new StringBuilder("| ");
                 for (Genre genre: mvDetail.getGenres()) {
                     sb.append(genre.getName() + " | ");
@@ -93,4 +94,5 @@ public class MovieDetailActivity extends Activity {
             }
         });
     }
+
 }
