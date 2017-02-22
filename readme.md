@@ -1,52 +1,60 @@
-# Assignment1 - Flicks
+# Project 1 - Flicks
 
-Flicks is an android app that allows user find information about movie.
+**Name of your app** shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
-Submitted by: Huynh Minh Anh Tuan
+Time spent: **X** hours spent in total
 
 ## User Stories
 
-**required** functionality is completed
+The following **required** functionality is completed:
 
-The following **optional** functionality is completed
+* [x] User can **scroll through current movies** from the Movie Database API
+* [x] Layout is optimized with the [ViewHolder](http://guides.codepath.com/android/Using-an-ArrayAdapter-with-ListView#improving-performance-with-the-viewholder-pattern) pattern.
+* [x] For each movie displayed, user can see the following details:
+  * [x] Title, Poster Image, Overview (Portrait mode)
+  * [x] Title, Backdrop Image, Overview (Landscape mode)
 
-Add pull-to-refresh for popular stream with SwipeRefreshLayout (1 point)
+The following **optional** features are implemented:
 
-Display a nice default placeholder graphic for each image during loading (read more about Picasso or Glide) (1 point)
+* [x] Display a nice default [placeholder graphic](http://guides.codepath.com/android/Displaying-Images-with-the-Picasso-Library#configuring-picasso) for each image during loading.
+* [x] Improved the user interface through styling and coloring.
 
-Improve the user interface through styling and coloring (1 to 5 points depending on the difficulty of UI improvements)
+The following **bonus** features are implemented:
 
-Stretch: Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity. (3 points)
+* [x] Allow user to view details of the movie including ratings and popularity within a separate activity or dialog fragment.
+* [ ] When viewing a popular movie (i.e. a movie voted for more than 5 stars) the video should show the full backdrop image as the layout.  Uses [Heterogenous ListViews](http://guides.codepath.com/android/Implementing-a-Heterogenous-ListView) or [Heterogenous RecyclerView](http://guides.codepath.com/android/Heterogenous-Layouts-inside-RecyclerView) to show different layouts.
+* [ ] Allow video trailers to be played in full-screen using the YouTubePlayerView.
+    * [ ] Overlay a play icon for videos that can be played.
+    * [ ] More popular movies should start a separate activity that plays the video immediately.
+    * [ ] Less popular videos rely on the detail page should show ratings and a YouTube preview.
+* [x] Apply the popular [Butterknife annotation library](http://guides.codepath.com/android/Reducing-View-Boilerplate-with-Butterknife) to reduce boilerplate code.
+* [x] Apply rounded corners for the poster or background images using [Picasso transformations](https://guides.codepath.com/android/Displaying-Images-with-the-Picasso-Library#other-transformations)
+* [ ] Replaced android-async-http network client with the popular [OkHttp](http://guides.codepath.com/android/Using-OkHttp) networking libraries.
 
-Stretch: Apply the popular ButterKnife annotation library to reduce view boilerplate. (1 point)
+The following **additional** features are implemented:
 
-Stretch: Add a rounded corners for the images using the Picasso transformations or Glide transformations. (1 point)
-
------------
-Added:
-- Add slide animation
------------
-## Video Walkthrough 
+* [x] Just customize views transition animation! 
+## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/zlZU7Vy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
-
-
-Update style and add slide animation:
-
 <img src='http://i.imgur.com/6jYegm0.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
 
+## Open-source libraries used
+
+- [Picasso](http://square.github.io/picasso/) - Image loading and caching library for Android
+- [Retrofit](https://square.github.io/retrofit/)
+- [ButterKnife](http://jakewharton.github.io/butterknife/)
+
 ## License
 
-    Copyright [2017] [Huynh Minh Anh Tuan]
+    Copyright [2017] [TuanHMA]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
